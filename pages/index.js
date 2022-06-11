@@ -8,6 +8,7 @@ import _productathon from '../Cards/productathon';
 import _saleable from '../Cards/saleable';
 import _startupexpo from '../Cards/startupexpo';
 import _vista from '../Cards/vista';
+import useEffect from './fetchA';
 export default function Home() {
   return (
     
@@ -80,3 +81,5 @@ export default function Home() {
 </div>
   )
 }
+//This func calls the esummit api
+useEffect(); 

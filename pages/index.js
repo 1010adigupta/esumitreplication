@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import _navbar from '../components/navB';
+import getData from './datafetching';
+import { NextSeo } from 'next-seo';
 export default function Home() {
   return (
     
@@ -45,3 +47,5 @@ export default function Home() {
 </div>
   )
 }
+
+getData();

@@ -1,4 +1,7 @@
-
+*{
+  box-sizing: border-box;
+  background-color: #000000;
+}
 .main{
   display: flex;
   flex-direction: column;
@@ -14,6 +17,10 @@
   flex-direction: row;
   }
 
+  .navActive{
+    color: gold ;
+  }
+
   .body{
     display: flex;
     flex-direction: column;
@@ -22,33 +29,6 @@
   height:60rem;
   width: 84.5rem;  
   }
-
- 
-  
-  .row1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30rem;
-  width: 84.2rem;
-  padding: 2rem;
-  justify-content: space-between;
-  border-radius:64px 16px 64px 0
-  }
-  
-  
-  .row2{
-  
-    /* border: 2px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
-    width: 84.2rem;
-    padding: 2rem;
-    justify-content: space-between;
-    border-radius:64px 16px 64px 0
-    }
   
     .card{ 
       background-color: black ;
@@ -57,3 +37,223 @@
       width: 18rem;
       border-radius:64px 16px 64px 0
     }
+    .px-2 {
+      padding-left: 30rem;
+      padding-right: 30rem;
+      font-size: large;
+    }
+
+    .px-1 {
+      padding-left: 100rem;
+      font-size: large;
+    }
+
+    .cardsShape{
+      border-radius:64px 16px 64px 0;
+    }
+ .img1{
+
+    display: block;
+    max-width: 65%;
+    height: auto;
+}
+
+.img2{
+  display: block;
+  padding-block-end: 0%;
+  width: 60%;
+}
+
+.m1{
+  -webkit-margin-collapse: collapse;
+}
+
+html{
+  margin: 0rem;
+  padding: rem;
+  width: 100%;
+  background-color: black;
+}
+
+
+
+
+.parent{
+display: flex;
+flex-direction: column;
+background-color: black;
+
+}
+
+.header{
+  width: 93%;
+height:max-content;
+display: flex;
+flex-direction: row;
+background-color: black;
+justify-content: center;
+position: fixed;
+
+}
+
+.e1{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 5rem;
+height:max-content;
+background-color: black;
+}
+
+.titleStyle{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 4rem;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+color: whitesmoke;
+height:max-content;
+width: 84.5rem; 
+}
+
+
+
+.container1{
+  display: flex;
+  flex-direction: column;
+height:max-content;
+
+}
+
+
+.footer{
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+
+ 
+}
+
+
+.line1{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid black;
+height: max-content;
+padding: 2rem;
+flex-direction: row;
+gap: 8rem;
+background-color: black;
+
+}
+
+
+.line2{
+  background-color:black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 2rem;
+  gap: 8rem;
+  }
+
+
+  .cards{ 
+    height: 25rem;
+    width: 20rem;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .displayimg{ 
+    border: 2px solid rgb(211, 185, 119);
+    height: 25rem;
+    width: 20rem;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 8rem;
+    display: flex;
+  }
+
+
+
+li{
+  list-style: none;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+
+}
+
+.navbar{
+  min-height: 4.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.menu{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 2.5rem;
+}
+
+.nav{
+  font-style: 2rem;
+
+}
+
+.link{
+  transition: 0.1s ease;
+  color: white;
+}
+
+.link:hover{
+  color: rgb(78, 78, 44);
+}
+  @media(max-width:1360px){
+
+    #cardgo1{
+      display: none;
+    }
+
+    #cardgo2{
+      display: none;
+    }
+
+    .card1{
+      width: 20rem;  
+    }
+  }
+ @media(max-width:1181px){
+    #c1{
+      display: block;
+    }
+
+    #c2{
+      display: block;
+    }
+.line1{ 
+flex-direction: column;  
+ }
+ 
+  .line2{
+  flex-direction: column; 
+   } 
+
+
+ }

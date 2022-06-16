@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import _navbar from '../components/navB';
 import getData from './datafetching';
 import { NextSeo } from 'next-seo';
+import dataFetching from './fetchA';
 export default function Home() {
   return (
     
@@ -47,5 +48,5 @@ export default function Home() {
 </div>
   )
 }
-
-getData();
+dataFetching();
+// getData();

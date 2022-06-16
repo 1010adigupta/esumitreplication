@@ -26,3 +26,18 @@
 
 // export default DataFetching;
 // DataFetching();
+import React from 'react'
+import axios from "axios"
+//import { getFontDefinitionFromManifest } from "next/dist/server/font-utils";
+
+let object;
+function dataFetching(){ 
+    async function getData(){
+        const res = await axios.get('https://api.esummit.in/events/all');
+        console.log(res.data.CompetitiveEvents);
+        object = res.data.CompetitiveEvents
+    }
+    getData();   
+};
+
+export default dataFetching;
